@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/content_horizontal_padding"
+    android:paddingTop="@dimen/content_vertical_padding"
+    android:paddingEnd="@dimen/content_horizontal_padding"
+    android:paddingBottom="@dimen/content_vertical_padding">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/tab_nutrition_title"
+        android:textStyle="bold" />
+
+    <include
+        android:id="@+id/details_tab_nutrition_fat"
+        layout="@layout/details_tab_nutrition_item" />
+
+    <include
+        android:id="@+id/details_tab_nutrition_fatty_acid"
+        layout="@layout/details_tab_nutrition_item" />
+
+    <include
+        android:id="@+id/details_tab_nutrition_sugar"
+        layout="@layout/details_tab_nutrition_item" />
+
+    <include
+        android:id="@+id/details_tab_nutrition_salt"
+        layout="@layout/details_tab_nutrition_item" />
+
+</LinearLayout>

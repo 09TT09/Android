@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">Yuka</string>
+
+    <string name="tab_nutrition_title">Repères nutritionnels pour 100g</string>
+    <string name="tab_nutrition_item">%1$s %2$s\n%3$s</string>
+    <string name="tab_nutrition_item_quantity_low">en faible quantité</string>
+    <string name="tab_nutrition_item_quantity_moderate">en quantité modérée</string>
+    <string name="tab_nutrition_item_quantity_high">en quantité élevée</string>
+    <string name="tab_nutrition_item_fat">de Matières grasses / Lipides</string>
+    <string name="tab_nutrition_item_fatty_acid">d\'acides gras saturés</string>
+    <string name="tab_nutrition_item_quantity_sugar">de sucres</string>
+    <string name="tab_nutrition_item_quantity_salt">de sel</string>
+
+    <string name="tab_details_nutriscore_hint">Nutriscore</string>
+    <string name="tab_details_item">%1$s : %2$s</string>
+    <string name="tab_details_barcode">Code-barres</string>
+    <string name="tab_details_quantity">Quantité</string>
+    <string name="tab_details_countries">Vendu en</string>
+    <string name="tab_details_ingredients">Ingrédients</string>
+    <string name="tab_details_allergens">Substances allergènes</string>
+    <string name="tab_details_additives">Additifs</string>
+
+</resources>

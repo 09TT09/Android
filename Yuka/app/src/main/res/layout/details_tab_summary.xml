@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/product_details_image"
+            android:layout_width="0dp"
+            android:layout_height="290dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/product_details_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/content_vertical_padding"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/product_details_guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/product_details_image"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/product_details_brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@id/product_details_nutriscore"
+            app:layout_constraintStart_toStartOf="@id/product_details_guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/product_details_name"
+            tools:text="Subtitle" />
+
+        <ImageView
+            android:id="@+id/product_details_nutriscore"
+            android:layout_width="78dp"
+            android:layout_height="42dp"
+            app:layout_constraintBottom_toBottomOf="@id/product_details_brand"
+            app:layout_constraintEnd_toEndOf="@id/product_details_guideline_end"
+            app:layout_constraintStart_toEndOf="@id/product_details_barrier"
+            app:layout_constraintTop_toTopOf="@id/product_details_name"
+            tools:src="@drawable/ic_nutriscore_a" />
+
+        <TextView
+            android:id="@+id/product_details_barcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/product_details_guideline_end"
+            app:layout_constraintStart_toStartOf="@id/product_details_guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/product_details_brand"
+            tools:text="Code-barres : xxx" />
+
+        <TextView
+            android:id="@+id/product_details_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/product_details_guideline_end"
+            app:layout_constraintStart_toStartOf="@id/product_details_guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/product_details_barcode"
+            tools:text="Qauntité : xxx" />
+
+        <TextView
+            android:id="@+id/product_details_countries"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/product_details_guideline_end"
+            app:layout_constraintStart_toStartOf="@id/product_details_guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/product_details_quantity"
+            tools:text="Vendu en : xxx" />
+
+        <TextView
+            android:id="@+id/product_details_ingredients"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/product_details_guideline_end"
+            app:layout_constraintStart_toStartOf="@id/product_details_guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/product_details_countries"
+            tools:text="Ingrédients : xxx" />
+
+        <TextView
+            android:id="@+id/product_details_allergens"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/product_details_guideline_end"
+            app:layout_constraintStart_toStartOf="@id/product_details_guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/product_details_ingredients"
+            tools:text="Allergènes : xxx" />
+
+        <TextView
+            android:id="@+id/product_details_additives"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/product_details_guideline_end"
+            app:layout_constraintStart_toStartOf="@id/product_details_guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/product_details_allergens"
+            tools:text="Additifs : xxx" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/product_details_barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="end"
+            app:constraint_referenced_ids="product_details_name,product_details_brand" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/product_details_guideline_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/content_horizontal_padding" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/product_details_guideline_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/content_horizontal_padding" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
